@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Interface2</title>
+
+<script src="backEnd.js"></script>
+<link rel="stylesheet" href="styles2.css">
+</head>
+
+
+<body style="background-color:#FC6">
+
+	<div id="Wrap" onload="begin()">
+    	<div id="Background">
+       	  <div id="Head">
+       		<div id="Cancel">
+            		<div style="width:53px;float:left;">
+                	<img src="Final Visuals/cancel.png" id="Cancel1" class="cancelButton" onclick="cancelTooth(1)" style="left:9px"/>
+                    </div>
+                    
+                    <div style="width:53px;float:left;">
+                    <img src="Final Visuals/cancel.png" id="Cancel2" class="cancelButton" onclick="cancelTooth(2)"style="left:9px"/>
+                    </div>
+                    <div style="width:53px;float:left;">
+                    <img src="Final Visuals/cancel.png" id="Cancel3" class="cancelButton" onclick="cancelTooth(3)"style="left:9px"/>
+                    </div>
+                    <div style="width:54px;float:left;">
+                    <img src="Final Visuals/cancel.png" id="Cancel4" class="cancelButton" onclick="cancelTooth(4)"style="left:9px"/>
+                    </div>
+                    <div style="width:54px;float:left;">
+                    <img src="Final Visuals/cancel.png" id="Cancel5" class="cancelButton" onclick="cancelTooth(5)"style="left:9px"/>
+                    </div>
+                    <div style="width:54px;float:left;">
+                    <img src="Final Visuals/cancel.png" id="Cancel6" class="cancelButton" onclick="cancelTooth(6)"style="left:9px"/>
+                    </div>
+                    <div style="width:54px;float:left;">
+                    <img src="Final Visuals/cancel.png" id="Cancel7" class="cancelButton" onclick="cancelTooth(7)"style="left:9px"/>
+                    </div>
+              	</div>
+           	<div id="MouthTop">
+            		<img src="Final Visuals/ToothSlots/Top-Empty.png" id="Top1" class="ToothSlot" ondragover="allowDrop(event,1)" ondrop="drop(event,1)" ondragleave="dragEnd(event,1)" draggable="false"/>
+                    <img src="Final Visuals/ToothSlots/Top-Empty.png" id="Top2" class="ToothSlot" ondragover="allowDrop(event,2)" ondrop="drop(event,2)" ondragleave="dragEnd(event,2)" draggable="false"/>
+                    <img src="Final Visuals/ToothSlots/Top-Empty.png" id="Top3" class="ToothSlot" ondragover="allowDrop(event,3)" ondrop="drop(event,3)" ondragleave="dragEnd(event,3)" draggable="false"/>
+                    <img src="Final Visuals/ToothSlots/Top-Empty.png" id="Top4" class="ToothSlot" ondragover="allowDrop(event,4)" ondrop="drop(event,4)" ondragleave="dragEnd(event,4)" draggable="false"/>
+                    <img src="Final Visuals/ToothSlots/Top-Empty.png" id="Top5" class="ToothSlot" ondragover="allowDrop(event,5)" ondrop="drop(event,5)" ondragleave="dragEnd(event,5)" draggable="false"/>
+                    <img src="Final Visuals/ToothSlots/Top-Empty.png" id="Top6" class="ToothSlot" ondragover="allowDrop(event,6)" ondrop="drop(event,6)" ondragleave="dragEnd(event,6)" draggable="false"/>
+                    <img src="Final Visuals/ToothSlots/Top-Empty.png" id="Top7" class="ToothSlot" ondragover="allowDrop(event,7)" ondrop="drop(event,7)" ondragleave="dragEnd(event,7)" draggable="false"/>
+                </div>
+                <div id="MouthBottom">
+                    <img src="Final Visuals/ToothSlots/Bottom-Empty.png" id="Bottom1" class="ToothSlot" style="top: 82px; left: 40px; width: 63px" ondragover="allowDrop(event,1)" ondrop="drop(event,1)" ondragleave="dragEnd(event,1)" draggable="false"/>
+                    <img src="Final Visuals/ToothSlots/Bottom-Empty.png" id="Bottom2" class="ToothSlot" style="top: 60px; left: 20px; width: 63px" ondragover="allowDrop(event,2)" ondrop="drop(event,2)" ondragleave="dragEnd(event,2)" draggable="false"/>
+                    <img src="Final Visuals/ToothSlots/Bottom-Empty.png" id="Bottom3" class="ToothSlot" style="top: 38px; left: 0px; width: 63px" ondragover="allowDrop(event,3)" ondrop="drop(event,3)" ondragleave="dragEnd(event,3)" draggable="false"/>
+                    <img src="Final Visuals/ToothSlots/Bottom-Empty.png" id="Bottom4" class="ToothSlot" style="top: 16px; left: -20px; width: 63px" ondragover="allowDrop(event,4)" ondrop="drop(event,4)" ondragleave="dragEnd(event,4)" draggable="false"/>
+                    <img src="Final Visuals/ToothSlots/Bottom-Empty.png" id="Bottom5" class="ToothSlot" style="top: -6px; left: -40px; width: 63px" ondragover="allowDrop(event,5)" ondrop="drop(event,5)" ondragleave="dragEnd(event,5)" draggable="false"/>
+                    <img src="Final Visuals/ToothSlots/Bottom-Empty.png" id="Bottom6" class="ToothSlot" style="top: -28px; left: -60px; width: 63px" ondragover="allowDrop(event,6)" ondrop="drop(event,6)" ondragleave="dragEnd(event,6)" draggable="false"/>
+                    <img src="Final Visuals/ToothSlots/Bottom-Empty.png" id="Bottom7" class="ToothSlot" style="top: -50px; left: -80px; width: 63px" ondragover="allowDrop(event,7)" ondrop="drop(event,7)" ondragleave="dragEnd(event,7)" draggable="false"/>
+                </div>
+          </div>
+          <div id="Height">
+          	<div id="heightInput" style="top: 55px; left: 175px; position: relative;">
+          		<form action="Javascript:showValues();" name="hInput">
+                	<input type="number" name="height" value="50" style="width:75px;height:50px;font-size:200%;"/>
+                    <input type="number" name="leafScore" value="1" style="width:75px;height:50px;font-size:200%;position:relative;top:115px;left:-85px;"/>
+                    <input type="image" src="Final Visuals/playButton.png" style="position: relative; top: 200px; left: -300px; width: 150px; height: auto; "/>
+            	</form>
+            </div>
+          </div>
+        </div>
+    
+    	<div id="Result">
+        	<center><font size="6" face="Arial, Helvetica, sans-serif">Plant Material Returned</font></center>
+        	<img id="resultPic" src="Final Visuals/blank_quality.png" style="width: 300px; height: 114px; left: 10px; position: relative; top: 20px;"/>
+            <div style="top: -95px; left: 320px; height: 70px; position: relative; width: 80px;">
+            	<center><font size="5" face="Arial, Helvetica, sans-serif">Amount:</font></center>
+            	<div id="Mass">
+            		?
+            	</div>
+            </div>
+        </div>
+    	
+        <div id="Teeth">
+        	
+        	<div id="sawTooth" class="ToothContainer">
+            	<center><font size="5" face="Arial, Helvetica, sans-serif">Sawing</font></center>
+            	<img src="Final Visuals/sawtooth.png" alt="saw" draggable="true" ondragstart="drag(event)" id="sawTooth" class="Tooth"/>
+            </div>
+            
+            <div id="fangTooth" class="ToothContainer">
+            	<center><font size="5" face="Arial, Helvetica, sans-serif">Tearing</font></center>
+            	<img src="Final Visuals/fangtooth.png" alt="fang" draggable="true" ondragstart="drag(event)" id="fangTooth" class="Tooth"/>
+            </div>
+            
+            <div id="chopTooth" class="ToothContainer">
+            	<center><font size="5" face="Arial, Helvetica, sans-serif">Chopping</font></center>
+            	<img src="Final Visuals/choptooth.png" alt="chop" draggable="true" ondragstart="drag(event)" id="chopTooth" class="Tooth"/>
+            </div>
+            
+            <div id="pierceTooth" class="ToothContainer">
+            	<center><font size="5" face="Arial, Helvetica, sans-serif">Piercing</font></center>
+            	<img src="Final Visuals/piercetooth.png" alt="pierce" draggable="true" ondragstart="drag(event)" id="pierceTooth" class="Tooth"/>
+            </div>
+            
+            <div id="crushTooth" class="ToothContainer">
+            	<center><font size="5" face="Arial, Helvetica, sans-serif">Crushing</font></center>
+            	<img src="Final Visuals/crushtooth.png" alt="crush" draggable="true" ondragstart="drag(event)" id="crushTooth" class="Tooth"/>
+            </div>
+        
+        </div>
+        
+        
+
+
+	</div>
+
+
+
+
+
+</body>
+
+
+
+
+</html>

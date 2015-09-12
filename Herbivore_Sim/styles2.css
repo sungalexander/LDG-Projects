@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#Wrap {
+	width: 1350px;
+	height: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#Background{
+	width: 1500px;
+	height: 900px;
+	background-image: url(Final%20Visuals/app_bg_1.png);
+	background-repeat: no-repeat;
+	background-size: 1300px 900px;
+}
+
+#Head{
+	width: 880px;
+	height: 564px;
+	background-image: url(Final%20Visuals/head.png);
+	background-repeat: no-repeat;
+	background-size: 880px 564px;
+	top: 50px;
+	left: -100px;
+	position: relative;
+}
+
+#Cancel{
+	top: 120px;
+	left: 190px;
+	position: relative;
+	width: 400px;
+	height: 50px;
+	z-index: 10;
+}
+
+.cancelButton{
+	width: 35px;
+	height: auto;
+	position: relative;
+}
+
+#MouthTop{
+	top: 125px;
+	left: 190px;
+	position: relative;
+	width: 400px;
+	height: 65px;
+}
+
+#MouthBottom{
+	top: 175px;
+	left: 200px;
+	position: relative;
+	width: 475px;
+	height: 75px;
+}
+
+
+.ToothSlot{
+	width: 50px;
+	height: auto;
+	position: relative;
+}
+
+#Height{
+	width: 313px;
+	height: 349px;
+	background-image: url(Final%20Visuals/hieghtBackground.png);
+	background-repeat: no-repeat;
+	background-size: 313px 349px;
+	z-index: 10;
+	left: 850px;
+	position: relative;
+	top: -500px;
+}
+
+
+#Teeth{
+	width: 900px;
+	height: 175px;
+	position: relative;
+	bottom: 550px;
+}
+
+.Tooth {
+	position: relative;
+	width: auto;
+	height: 115px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	top: 10px;
+}
+
+.ToothContainer{
+	position: relative;
+	float: left;
+	width: 155px;
+	height: 175px;
+	border: solid 5px;
+	background: white;
+}
+
+#Result{
+	width: 450px;
+	height: 180px;
+	position: relative;
+	left: 850px;
+	bottom: 350px;
+	background: white;
+	border: solid 5px;
+}
+
+#Mass{
+	width: 80px;
+	height: 60px;
+	font-size: 200%;
+	border: solid black 5px;
+	background-color: #FC3;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	top: 10px;
+}
